@@ -38,7 +38,6 @@
 .btn-primary {
   background-color: #73dc8c;
 }
-
 .btn-primary:hover {
   background-color: #4f4d4d;
   color: #73dc8c;
@@ -47,6 +46,20 @@
 .btn-secondary:hover {
   background-color: #4f4d4d;
   color: white;
+}
+
+.btn-dark {
+  background-color: #363636;
+  color: white;
+}
+.btn-dark:hover {
+  background-color: #7d7d7d;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 3rem 0 7rem 0;
 }
 
 body {
@@ -163,4 +176,86 @@ body {
   font-size: 0.8rem;
   padding: 1rem 0;
   font-weight: 300;
+}
+
+/* Community Section */
+
+.community-section {
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.reviews-container {
+  padding: 0 3.5rem;
+}
+.reviews-container .row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews-container .row:nth-child(even) {
+  margin: 5rem 0;
+}
+
+.review-card {
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  width: 27%;
+  position: relative;
+  transition: all 200ms ease-out;
+}
+.review-card .review-avatar-img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  position: absolute;
+  top: -1.5rem;
+  left: 3rem;
+  object-fit: cover;
+}
+.review-card-body .review-desc {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.review-card-body .review-user {
+  margin-top: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.row:nth-child(odd) .review-card:nth-child(1),
+.row:nth-child(even) .review-card:nth-child(2) {
+  background-color: #73dc8c;
+  color: #1e1919;
+}
+.row:nth-child(odd) .review-card:nth-child(1):hover,
+.row:nth-child(even) .review-card:nth-child(2):hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.row:nth-child(odd) .review-card:nth-child(2),
+.row:nth-child(even) .review-card:nth-child(3) {
+  background-color: #4b78e6;
+  color: white;
+}
+
+.row:nth-child(odd) .review-card:nth-child(2):hover,
+.row:nth-child(even) .review-card:nth-child(3):hover {
+  transform: rotate(5deg) scale(1.1);
+}
+.row:nth-child(odd) .review-card:nth-child(3),
+.row:nth-child(even) .review-card:nth-child(1) {
+  background-color: #fa9bfa;
+  color: #1e1919;
+}
+
+.row:nth-child(odd) .review-card:nth-child(3):hover,
+.row:nth-child(even) .review-card:nth-child(1):hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.review-actions {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
