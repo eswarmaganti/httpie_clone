@@ -14,6 +14,9 @@
   display: flex;
   gap: 0.5rem;
 }
+.active {
+  color: #73dc8c !important;
+}
 
 .btn {
   display: flex;
@@ -59,7 +62,14 @@
 .heading {
   text-align: center;
   font-size: 2.5rem;
-  padding: 3rem 0 7rem 0;
+}
+
+.subhead {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1rem 0;
 }
 
 body {
@@ -178,15 +188,16 @@ body {
   font-weight: 300;
 }
 
-/* Community Section */
+/* Reviews Section */
 
-.community-section {
-  padding: 0 1rem;
-  margin-bottom: 5rem;
+.reviews-section {
+  padding-top: 3rem;
+  padding: 5rem;
 }
 
 .reviews-container {
   padding: 0 3.5rem;
+  margin-top: 7rem;
 }
 .reviews-container .row {
   align-items: center;
@@ -258,4 +269,84 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+/* Clinets Section */
+.clients-section {
+  padding: 5rem 0;
+}
+
+.clients-logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.client-logo {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3rem;
+  background-color: #363636;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-logo i {
+  font-size: 2rem;
+}
+
+
+/* Community Section*/
+.community-section{
+  padding: 5rem 0;
+  background-color: #4b78e6;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.community-actions{
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.community-actions h3,.community-form h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.community-form .form-control{
+  border: 3px solid #73dc8c;
+  background-color: #3354A6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  width: 50%;
+  height: 3rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: .2rem;
+}
+.community-form .form-control input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  height: 100%;
+  font-size: 1rem;
+  color: white;
+}
+.community-form .form-control button{
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 1.2rem;
+  border: none;
+  outline: none;
+  background-color: #73dc8c;
+  color: #1e1919;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+.community-form .form-control button:hover{
+  transform: scale(.9);
 }
